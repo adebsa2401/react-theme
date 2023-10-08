@@ -1,5 +1,5 @@
-import ThemeContext from "./theme-context";
-import type {ColorScheme, ThemeProviderProps} from "./@types";
+import ThemeContext from "@/theme-context";
+import type {ColorScheme, ThemeProviderProps} from "@/types";
 import {useMemo, useState} from "react";
 
 export default function ThemeProvider({ children, themeBuilder, initialColorScheme }: ThemeProviderProps) {
