@@ -38,6 +38,7 @@
     "lodash": "^4.17.21",
     "prettier": "^3.0.3",
     "react": "^18.2.0",
+    "react-native": "^0.72.5",
     "typescript": "^5.2.2"
   },
   "files": [
