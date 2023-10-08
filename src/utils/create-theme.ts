@@ -1,4 +1,4 @@
-import type {ColorScheme, CreateThemeArgs} from "@/types";
+import type {ColorScheme, CreateThemeArgs} from "../types";
 
 const createTheme = (theme: CreateThemeArgs) => {
   const lightTheme = {

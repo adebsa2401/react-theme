@@ -1,9 +1,9 @@
-import ThemeContext from "@/theme-context";
-import type {ColorScheme, ThemeProviderProps} from "@/types";
+import ThemeContext from "./theme-context";
+import type {ColorScheme, ThemeProviderProps} from "./types";
 import {useMemo, useState} from "react";
 
 export default function ThemeProvider({ children, themeBuilder, initialColorScheme }: ThemeProviderProps) {
-  const [colorScheme, setColorScheme] = useState<ColorScheme>(initialColorScheme);
+  const [colorScheme, setColorScheme] = useState<ColorScheme>(initialColorScheme || 'light');
   const theme = useMemo(() => themeBuilder(colorScheme), [colorScheme, themeBuilder]);
 
   return (
