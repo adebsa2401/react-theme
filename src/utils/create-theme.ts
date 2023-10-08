@@ -4,22 +4,22 @@ export const defaultTheme = {
   default: {},
   light: {},
   dark: {},
-};
+}
 
 const createTheme = <D extends object, L extends object, K extends object>(theme: CreateThemeArgs<D, L, K>) => {
-  type Theme = D & L & K;
+  type Theme = D & L & K
 
   const lightTheme = {
     ...(theme.dark ?? {}),
-    ...theme.default ?? {},
+    ...(theme.default ?? {}),
     ...(theme.light ?? {}),
-  } as Theme;
+  } as Theme
 
   const darkTheme = {
     ...(theme.light ?? {}),
-    ...theme.default ?? {},
+    ...(theme.default ?? {}),
     ...(theme.dark ?? {}),
-  } as Theme;
+  } as Theme
 
   return (colorScheme: ColorScheme) => {
     switch (colorScheme) {
