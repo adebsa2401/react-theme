@@ -1,4 +1,4 @@
-import type { ColorScheme, CreateThemeArgs } from '../types'
+import type { ColorScheme, CreateThemeArgs } from './types'
 import _ from 'lodash'
 
 export const defaultTheme = {
