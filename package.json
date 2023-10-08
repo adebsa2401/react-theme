@@ -26,6 +26,7 @@
   "author": "Ben Salès (adebsa2401@gmail.com)",
   "license": "MIT",
   "devDependencies": {
+    "@types/lodash": "^4.14.199",
     "@types/react": "^18.2.25",
     "@typescript-eslint/eslint-plugin": "^6.7.4",
     "@typescript-eslint/parser": "^6.7.4",
@@ -34,6 +35,7 @@
     "eslint-plugin-prettier": "^5.0.0",
     "eslint-plugin-react": "^7.33.2",
     "eslint-plugin-react-hooks": "^4.6.0",
+    "lodash": "^4.17.21",
     "prettier": "^3.0.3",
     "react": "^18.2.0",
     "typescript": "^5.2.2"
