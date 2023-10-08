@@ -15,10 +15,10 @@ const createTheme = (theme: CreateThemeArgs) => {
 
   return (colorScheme: ColorScheme) => {
     switch (colorScheme) {
-      case 'light':
-        return lightTheme
       case 'dark':
         return darkTheme
+      default:
+        return lightTheme
     }
   }
 }

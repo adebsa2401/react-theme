@@ -1,18 +1,13 @@
 import React from 'react'
 import ThemeContext from './theme-context'
-import type { ColorScheme, ThemeProviderProps } from './types'
-import { useMemo, useState } from 'react'
+import type { ThemeProviderProps } from './types'
 
-export default function ThemeProvider({ children, themeBuilder, initialColorScheme }: ThemeProviderProps) {
-  const [colorScheme, setColorScheme] = useState<ColorScheme>(initialColorScheme || 'light')
-  const theme = useMemo(() => themeBuilder(colorScheme), [colorScheme, themeBuilder])
-
+export default function ThemeProvider({ children, themeBuilder, colorScheme }: ThemeProviderProps) {
   return (
     <ThemeContext.Provider
       value={{
-        theme,
+        theme: themeBuilder(colorScheme),
         colorScheme,
-        setColorScheme,
       }}
     >
       {children}
