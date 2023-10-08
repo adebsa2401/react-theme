@@ -1,10 +1,10 @@
-import {createContext} from "react";
-import type {IThemeContext} from "./types";
+import { createContext } from 'react'
+import type { IThemeContext } from './types'
 
 const ThemeContext = createContext<IThemeContext>({
-  colorScheme: "light",
+  colorScheme: 'light',
   theme: {},
-  setColorScheme: () => {}
-});
+  setColorScheme: () => {},
+})
 
-export default ThemeContext;
+export default ThemeContext

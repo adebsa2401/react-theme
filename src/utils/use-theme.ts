@@ -1,11 +1,9 @@
-import ThemeContext from "../theme-context";
-import {useContext} from "react";
-import {IThemeContext} from "../types";
+import ThemeContext from '../theme-context'
+import { useContext } from 'react'
+import type { IThemeContext } from '../types'
 
-const useTheme = <T extends object = {}>() => {
-  const context = useContext(ThemeContext);
-
-  return context as IThemeContext<T>;
+const useTheme = <T extends object = object>() => {
+  return useContext(ThemeContext) as IThemeContext<T>
 }
 
-export default useTheme;
+export default useTheme

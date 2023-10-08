@@ -1,26 +1,26 @@
-import type {ColorScheme, CreateThemeArgs} from "../types";
+import type { ColorScheme, CreateThemeArgs } from '../types'
 
 const createTheme = (theme: CreateThemeArgs) => {
   const lightTheme = {
     ...(theme.dark ?? {}),
     ...theme.default,
-    ...(theme.light ?? {})
-  };
+    ...(theme.light ?? {}),
+  }
 
   const darkTheme = {
     ...(theme.light ?? {}),
     ...theme.default,
-    ...(theme.dark ?? {})
-  };
+    ...(theme.dark ?? {}),
+  }
 
   return (colorScheme: ColorScheme) => {
     switch (colorScheme) {
-      case "light":
-        return lightTheme;
-      case "dark":
-        return darkTheme;
+      case 'light':
+        return lightTheme
+      case 'dark':
+        return darkTheme
     }
-  };
+  }
 }
 
-export default createTheme;
+export default createTheme
