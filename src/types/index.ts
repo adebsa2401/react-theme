@@ -12,8 +12,8 @@ export type ThemeProviderProps<T extends object = object> = PropsWithChildren & 
   themeBuilder: (colorScheme: ColorScheme) => T
 }
 
-export type CreateThemeArgs = {
-  default?: object
-  light?: object
-  dark?: object
+export type CreateThemeArgs<D extends object, L extends object, K extends object> = {
+  default?: D
+  light?: L
+  dark?: K
 }
