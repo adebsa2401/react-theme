@@ -1,6 +1,6 @@
 {
   "name": "@adebsa2401/react-theme",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Theme provider for React.js and React Native applications",
   "main": "./dist/cjs/index.js",
   "module": "./dist/esm/index.js",
